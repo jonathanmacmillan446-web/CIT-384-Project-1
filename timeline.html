@@ -4,77 +4,89 @@
     <meta charset="utf-8">
     <title>Alien Fan Site - Movie Timeline</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- internal CSS: only used on this page -->
+    <style>
+      dt {
+        color: #2e6b34;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <header id="top" role="banner">
       <h1>Alien Fan Site</h1>
       <h2>Movie Timeline</h2>
-      <nav>
-        <p><a href="index.html">Home</a></p>
-        <p><a href="xenomorphs.html">The Xenomorph</a></p>
-        <p><a href="marines.html">Colonial Marines</a></p>
-        <p><a href="timeline.html">Movie Timeline</a></p>
+      <nav role="navigation">
+        <p><a href="index.html" title="Go to the home page">Home</a></p>
+        <p><a href="xenomorphs.html" title="Learn about the Xenomorph">The Xenomorph</a></p>
+        <p><a href="marines.html" title="Learn about the Colonial Marines">Colonial Marines</a></p>
+        <p><a href="timeline.html" title="See every Alien movie in order">Movie Timeline</a></p>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h3>All the Movies</h3>
-        <p>
-          <!-- draggable="false" (MDN attribute 1, see index.html) -->
-          <img src="images/photos/ripley-flamethrower.png" alt="Ripley holding a flamethrower and pulse rifle in the alien hive in Aliens" width="400" class="flowRight" draggable="false">
-          Here are the main <i>Alien</i> movies in the order they came out.
-          Ellen Ripley is the main character in the first four.
+    <main role="main">
+      <article role="article">
+        <section>
+          <h3>All the Movies</h3>
+          <p>
+            <!-- draggable="false" (MDN attribute 1, see index.html) -->
+            <img src="images/photos/ripley-flamethrower.png" alt="Ripley holding a flamethrower and pulse rifle in the alien hive in Aliens" width="400" class="flowRight" draggable="false">
+            Here are the main <i>Alien</i> movies in the order they came out.
+            Ellen Ripley is the main character in the first four.
+          </p>
+          <dl>
+            <dt>Alien (1979)</dt>
+            <dd>Directed by Ridley Scott. The crew of the Nostromo brings an alien on board.</dd>
+            <dt>Aliens (1986)</dt>
+            <dd>Directed by James Cameron. Ripley goes back to LV-426 with the Marines.</dd>
+            <dt>Alien 3 (1992)</dt>
+            <dd>Directed by David Fincher. Ripley crash lands on a prison planet.</dd>
+            <dt>Alien: Resurrection (1997)</dt>
+            <dd>Directed by Jean-Pierre Jeunet. A clone of Ripley is made 200 years later.</dd>
+            <dt>Prometheus (2012)</dt>
+            <dd>Directed by Ridley Scott. A prequel about where humans came from.</dd>
+            <dt>Alien: Covenant (2017)</dt>
+            <dd>Directed by Ridley Scott. A colony ship finds a dangerous planet.</dd>
+            <dt>Alien: Romulus (2024)</dt>
+            <dd>Directed by Fede Alvarez. Young colonists find aliens on an old space station.</dd>
+          </dl>
+
+          <!--
+            MDN ELEMENT 3: <template>
+            What: holds HTML that does not show up on the page.
+            Where: right here, after the movie list.
+            How: I use it as a blank copy of a movie entry. When a new movie
+            comes out, I can copy it, fill it in, and add it to the list.
+          -->
+          <template>
+            <dt>Movie Title (Year)</dt>
+            <dd>Directed by ... Short summary.</dd>
+          </template>
+        </section>
+
+        <aside role="complementary">
+          <h4>Did You Know?</h4>
+          <p>Prometheus and Alien: Covenant came out later, but their stories happen before the first movie.</p>
+          <p>
+            In the first movie, the crew finds a giant dead pilot called the
+            "Space Jockey." <i>Prometheus</i> shows that it was really an Engineer
+            wearing a suit.
+          </p>
+        </aside>
+
+        <p class="center">
+          <img src="images/photos/space-jockey.webp" alt="Painting of the Space Jockey sitting in its giant pilot chair" width="500">
+          <br>
+          <small style="color: gray;">Space Jockey art by H.R. Giger</small>
         </p>
-        <dl>
-          <dt>Alien (1979)</dt>
-          <dd>Directed by Ridley Scott. The crew of the Nostromo brings an alien on board.</dd>
-          <dt>Aliens (1986)</dt>
-          <dd>Directed by James Cameron. Ripley goes back to LV-426 with the Marines.</dd>
-          <dt>Alien 3 (1992)</dt>
-          <dd>Directed by David Fincher. Ripley crash lands on a prison planet.</dd>
-          <dt>Alien: Resurrection (1997)</dt>
-          <dd>Directed by Jean-Pierre Jeunet. A clone of Ripley is made 200 years later.</dd>
-          <dt>Prometheus (2012)</dt>
-          <dd>Directed by Ridley Scott. A prequel about where humans came from.</dd>
-          <dt>Alien: Covenant (2017)</dt>
-          <dd>Directed by Ridley Scott. A colony ship finds a dangerous planet.</dd>
-          <dt>Alien: Romulus (2024)</dt>
-          <dd>Directed by Fede Alvarez. Young colonists find aliens on an old space station.</dd>
-        </dl>
-
-        <!--
-          MDN ELEMENT 3: <template>
-          What: holds HTML that does not show up on the page.
-          Where: right here, after the movie list.
-          How: I use it as a blank copy of a movie entry. When a new movie
-          comes out, I can copy it, fill it in, and add it to the list.
-        -->
-        <template>
-          <dt>Movie Title (Year)</dt>
-          <dd>Directed by ... Short summary.</dd>
-        </template>
-      </section>
-
-      <aside>
-        <h4>Did You Know?</h4>
-        <p>Prometheus and Alien: Covenant came out later, but their stories happen before the first movie.</p>
-        <p>
-          In the first movie, the crew finds a giant dead pilot called the
-          "Space Jockey." <i>Prometheus</i> shows that it was really an Engineer
-          wearing a suit.
-        </p>
-      </aside>
-
-      <p class="center">
-        <img src="images/photos/space-jockey.webp" alt="Painting of the Space Jockey sitting in its giant pilot chair" width="500">
-        <br>
-        <small>Space Jockey art by H.R. Giger</small>
-      </p>
+      </article>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <p>CIT 384 Project 1 - Alien Fan Site. Images from hollywoodrelics.com and monsterlegacy.net.</p>
+      <p>
+        <a href="#top" title="Go back to the top of this page">Back to top</a> |
+        <a href="https://en.wikipedia.org/wiki/Alien_(franchise)" target="_blank" rel="noopener noreferrer" title="Read about the Alien movies on Wikipedia (opens in a new tab)">Alien on Wikipedia</a>
+      </p>
     </footer>
   </body>
 </html>
