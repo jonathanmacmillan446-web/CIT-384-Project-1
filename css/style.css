@@ -19,9 +19,10 @@ h1 {
   margin-bottom: 0;
 }
 
+/* rem is relative to the root (html) element, so 1rem = 16px */
 h2 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: #555555;
   margin-top: 0;
   border-bottom: 1px solid gray;
@@ -37,6 +38,11 @@ a {
 
 a:hover {
   color: #8a5a00;
+}
+
+/* id selector - matches the one header with id="top" on each page */
+#top {
+  margin-bottom: 1.5rem;
 }
 
 nav p {
@@ -121,5 +127,5 @@ footer {
   clear: both;
   border-top: 1px solid gray;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
