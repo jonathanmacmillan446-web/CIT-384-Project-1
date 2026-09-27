@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Alien Fan Site - Home</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Alien Fan Site</h1>
+      <h2>Home</h2>
+      <nav>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="xenomorphs.html">The Xenomorph</a></p>
+        <p><a href="marines.html">Colonial Marines</a></p>
+        <p><a href="timeline.html">Movie Timeline</a></p>
+      </nav>
+    </header>
+
+    <main>
+      <!--
+        MDN ELEMENT 1: <dialog>
+        What: a pop-up box.
+        Where: top of the home page.
+        How: the open attribute makes it show when the page loads. The
+        form with method="dialog" closes it when you click OK.
+      -->
+      <dialog open>
+        <p><b>Welcome!</b> This is a fan site about the Alien movies.</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
+      <!--
+        MDN ATTRIBUTE 1: draggable
+        What: says if an element can be dragged with the mouse.
+        Where: on the first picture of every page.
+        How: draggable="false" stops the picture from being dragged
+        off the page by accident.
+      -->
+      <img src="images/photos/xeno-dark.png" alt="A Xenomorph's head coming out of the dark" class="banner" draggable="false">
+
+      <section>
+        <h3>About This Site</h3>
+        <p>
+          <img src="images/photos/xeno-hallway.png" alt="A Xenomorph waiting in the dark while a soldier aims down a bright hallway" width="350" class="flowRight">
+          This site is about the <i>Alien</i> franchise movies. The first movie came out
+          in 1979 and was directed by Ridley Scott. It is about the crew of a
+          spaceship called the Nostromo who find a dangerous alien creature
+          on a moon called LV-426.
+        </p>
+        <p>
+          Since then there have been seven main movies. I enjoy them because
+          they mix science fiction with horror, and the xenomorph design is awesome as sci-fi creatures go.
+        </p>
+      </section>
+
+      <section>
+        <h3>What's on This Site</h3>
+        <ul>
+          <li><a href="xenomorphs.html">The Xenomorph</a> - the alien's life cycle and types</li>
+          <li><a href="marines.html">Colonial Marines</a> - the soldiers from <i>Aliens</i></li>
+          <li><a href="timeline.html">Movie Timeline</a> - every movie in order</li>
+        </ul>
+      </section>
+
+      <aside>
+        <h4>Fun Fact</h4>
+        <p>The alien's blood is acid. It can melt right through the floor of a spaceship.</p>
+      </aside>
+
+      <section>
+        <p class="center">
+          <img src="images/photos/xeno-glass.webp" alt="An astronaut behind cracked glass with a Xenomorph on the other side" width="700">
+        </p>
+        <blockquote class="center">
+          "You still don't know what you're dealing with, do you? Perfect organism." - Ash, <i>Alien</i> (1979)
+        </blockquote>
+      </section>
+    </main>
+
+    <footer>
+      <p>CIT 384 Project 1 - Alien Fan Site. Images found on wallpaperflare.com.</p>
+    </footer>
+  </body>
+</html>

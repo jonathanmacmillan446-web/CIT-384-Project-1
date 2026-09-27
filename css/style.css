@@ -1,0 +1,110 @@
+/* CIT 384 Project 1 - Alien Fan Site */
+
+html {
+  background: #1f3322;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  background: white;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #2e6b34;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5em;
+  color: #555555;
+  margin-top: 0;
+  border-bottom: 1px solid gray;
+}
+
+h3 {
+  color: #2e6b34;
+}
+
+a {
+  color: #2e6b34;
+}
+
+a:hover {
+  color: #8a5a00;
+}
+
+nav p {
+  margin: 0;
+}
+
+td, th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+caption {
+  text-align: left;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 10px;
+}
+
+aside {
+  background: #2e6b34;
+  color: white;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+/* object-fit: cover trims the extra black space off the top and
+   bottom instead of squishing the picture */
+.banner {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.center {
+  text-align: center;
+}
+
+.flowRight {
+  float: right;
+  margin-left: 10px;
+}
+
+section {
+  clear: both;
+}
+
+.notes {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+dialog {
+  border: 2px solid #2e6b34;
+}
+
+footer {
+  clear: both;
+  border-top: 1px solid gray;
+  text-align: center;
+  font-size: 0.8em;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Alien Fan Site - Colonial Marines</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Alien Fan Site</h1>
+      <h2>Colonial Marines</h2>
+      <nav>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="xenomorphs.html">The Xenomorph</a></p>
+        <p><a href="marines.html">Colonial Marines</a></p>
+        <p><a href="timeline.html">Movie Timeline</a></p>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h3>Who Are They?</h3>
+        <p>
+          <!-- draggable="false" (MDN attribute 1, see index.html) -->
+          <img src="images/photos/marine-vs-alien.jpg" alt="A Colonial Marine face to face with a Xenomorph" width="350" class="flowRight" draggable="false">
+          The Colonial Marines are the soldiers in the movie <i>Aliens</i>
+          (1986). They fly to LV-426 on a ship called the Sulaco after the
+          people living there stop answering messages. Ripley goes with them
+          to help.
+        </p>
+      </section>
+
+      <section>
+        <h3>The Squad</h3>
+        <img src="images/photos/marine-squad.webp" alt="Four Colonial Marines walking down a spaceship hallway" width="700">
+        <table>
+          <caption>Some of the Marines in the movie</caption>
+          <tr>
+            <th>Name</th>
+            <th>Rank</th>
+            <th>Job</th>
+          </tr>
+          <tr>
+            <td>Apone</td>
+            <td>Sergeant</td>
+            <td>Squad leader</td>
+          </tr>
+          <tr>
+            <td>Hicks</td>
+            <td>Corporal</td>
+            <td>Second in command</td>
+          </tr>
+          <tr>
+            <td>Vasquez</td>
+            <td>Private</td>
+            <td>Smartgunner</td>
+          </tr>
+          <tr>
+            <td>Hudson</td>
+            <td>Private</td>
+            <td>Radio tech</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h3>Weapons</h3>
+        <ul>
+          <li>Pulse Rifle</li>
+          <li>Smartgun</li>
+          <li>Flamethrower</li>
+          <li>Motion Tracker</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Launch Countdown</h3>
+        <!-- reversed makes the list count down from 5 -->
+        <ol start="5" reversed>
+          <li>Check weapons</li>
+          <li>Close the doors</li>
+          <li>Check the fuel</li>
+          <li>Clear the launch bay</li>
+          <li>Launch</li>
+        </ol>
+        <!--
+          MDN ELEMENT 2: <progress>
+          What: a bar that shows how much of something is done.
+          Where: under the countdown list.
+          How: value="3" max="5" shows 3 of the 5 steps are done.
+        -->
+        <p>Countdown: <progress value="3" max="5">3 of 5</progress> 3 of 5 done</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>CIT 384 Project 1 - Alien Fan Site. Images are from the video game <i>Aliens: Colonial Marines</i> (found on wallpaperflare.com).</p>
+    </footer>
+  </body>
+</html>
