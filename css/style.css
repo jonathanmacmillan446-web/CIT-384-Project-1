@@ -76,9 +76,28 @@ blockquote {
   text-align: center;
 }
 
+/* a picture and its credit line, floated to the right of the text */
 .flowRight {
   float: right;
-  margin-left: 10px;
+  width: 356px;
+  margin: 0 0 15px 20px;
+  text-align: center;
+}
+
+/* narrower box for the tall Xenomorph head picture */
+.narrow {
+  width: 186px;
+}
+
+/* thin dark green frame around the pictures */
+.flowRight img,
+.center img {
+  border: 3px solid #1f3322;
+}
+
+/* small gray credit line under each picture */
+.credit {
+  color: gray;
 }
 
 section {
@@ -90,7 +109,11 @@ section {
   padding: 10px;
 }
 
+/* position: static keeps the pop-up in line with the page
+   so it doesn't cover the picture under it */
 dialog {
+  position: static;
+  margin: 0 auto 1em auto;
   border: 2px solid #2e6b34;
 }
 
