@@ -1,7 +1,10 @@
-/* CIT 384 Project 1 - Alien Fan Site */
+/* CIT 384 Project 1 - Alien Fan Site
+   Dark "ship computer" theme: near-black background,
+   acid green (#7fd34e) highlights, amber (#ffb347) details,
+   and monospace headings like an old computer terminal */
 
 html {
-  background: #1f3322;
+  background: #050605;
 }
 
 body {
@@ -9,54 +12,76 @@ body {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  padding: 2%;
-  background: white;
+  padding: 0 2% 2% 2%;
+  background: #121512;
+  color: #d8e0d4;
   line-height: 1.6;
+  border-left: 1px solid #2c3a2c;
+  border-right: 1px solid #2c3a2c;
+}
+
+/* id selector - matches the one header with id="top" on each page */
+#top {
+  padding: 20px 0 10px 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #7fd34e;
 }
 
 h1 {
-  color: #2e6b34;
-  margin-bottom: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  color: #7fd34e;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 /* rem is relative to the root (html) element, so 1rem = 16px */
 h2 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 2.5rem;
-  color: #555555;
-  margin-top: 0;
-  border-bottom: 1px solid gray;
+  color: #ffffff;
+  margin: 0 0 10px 0;
 }
 
 h3 {
-  color: #2e6b34;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  color: #7fd34e;
+  border-left: 4px solid #7fd34e;
+  padding-left: 10px;
 }
 
 a {
-  color: #2e6b34;
+  color: #7fd34e;
 }
 
 a:hover {
-  color: #8a5a00;
+  color: #ffb347;
 }
 
-/* id selector - matches the one header with id="top" on each page */
-#top {
-  margin-bottom: 1.5rem;
-}
-
+/* descendant selector - the nav links sit side by side in a row */
 nav p {
-  margin: 0;
+  display: inline;
+  margin-right: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+th {
+  background: #1e261e;
+  color: #7fd34e;
 }
 
 td, th {
   padding: 8px;
   text-align: left;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #2c3a2c;
 }
 
 caption {
   text-align: left;
+  color: #8e9a8a;
 }
 
 dt {
@@ -67,15 +92,24 @@ dd {
   margin-bottom: 10px;
 }
 
+/* the "Fun Fact" and "Did You Know?" boxes */
 aside {
-  background: #2e6b34;
-  color: white;
+  background: #1b2a1b;
+  border: 1px dashed #7fd34e;
   padding: 1em;
   margin-bottom: 1em;
 }
 
+aside h4 {
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  color: #ffb347;
+  margin-top: 0;
+}
+
 blockquote {
   font-style: italic;
+  color: #a9b5a5;
 }
 
 .center {
@@ -95,23 +129,25 @@ blockquote {
   width: 186px;
 }
 
-/* thin dark green frame around the pictures */
+/* thin green frame around the pictures */
 .flowRight img,
 .center img {
-  border: 3px solid #1f3322;
+  border: 3px solid #3d5a3d;
 }
 
 /* small gray credit line under each picture */
 .credit {
-  color: gray;
+  color: #8e9a8a;
 }
 
 section {
   clear: both;
 }
 
+/* the contenteditable note boxes on xenomorphs.html */
 .notes {
-  border: 1px solid gray;
+  background: #0b0d0b;
+  border: 1px dashed #7fd34e;
   padding: 10px;
 }
 
@@ -120,12 +156,23 @@ section {
 dialog {
   position: static;
   margin: 0 auto 1em auto;
-  border: 2px solid #2e6b34;
+  background: #0b0d0b;
+  color: #d8e0d4;
+  border: 2px solid #7fd34e;
+}
+
+dialog button {
+  background: #7fd34e;
+  color: #050605;
+  border: none;
+  padding: 5px 15px;
+  font-weight: bold;
 }
 
 footer {
   clear: both;
-  border-top: 1px solid gray;
+  border-top: 1px solid #2c3a2c;
   text-align: center;
   font-size: 0.8rem;
+  color: #8e9a8a;
 }
