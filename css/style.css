@@ -206,9 +206,10 @@ blockquote {
 
 /* ---------- Pictures ---------- */
 
-/* centers the picture and caption */
+/* centers the picture and caption, and starts below any picture on the right */
 .center {
   text-align: center;
+  clear: both;
 }
 
 /* picture box on the right, text wraps around it */
