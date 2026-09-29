@@ -1,17 +1,25 @@
 <!DOCTYPE html>
+<!-- lang="en" means this page is in English -->
 <html lang="en">
   <head>
+    <!-- charset makes letters and symbols show correctly -->
     <meta charset="utf-8">
+    <!-- title = the text on the browser tab -->
     <title>Alien Fan Site - Colonial Marines</title>
+    <!-- link connects this page to the stylesheet -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <!-- classified warning strip at the top of every page -->
     <p class="classified">Top Secret // Weyland-Yutani Corporation // Clearance Level 5 Required</p>
+    <!-- header = top of the page. id="top" is where "Back to top" jumps to. role helps screen readers -->
     <header id="top" role="banner">
+      <!-- h1 = site name, h2 = page name -->
       <h1>Alien Fan Site</h1>
       <h2>Colonial Marines</h2>
+      <!-- file number for the classified look -->
       <p class="file-id">File 002 // USCM Personnel</p>
+      <!-- nav = links to every page. href = where it goes, title = tooltip on hover -->
       <nav role="navigation">
         <p><a href="index.html" title="Go to the home page">Home</a></p>
         <p><a href="xenomorphs.html" title="Learn about the Xenomorph">The Xenomorph</a></p>
@@ -22,8 +30,11 @@
       </nav>
     </header>
 
+    <!-- main = the main content of the page -->
     <main role="main">
+      <!-- article = holds all the content on this page -->
       <article role="article">
+        <!-- section = one topic, starting with an h3 heading -->
         <section>
           <h3>Who Are They?</h3>
           <p>
@@ -31,6 +42,7 @@
             (1986). Aboard the warship Sulaco, the squad is sent to LV-426 after contact is lost
             with the human colony there, with Ripley joining them as an advisor.
           </p>
+          <!-- centered picture with a caption. alt describes the picture if it does not load -->
           <p class="center">
             <!-- draggable="false" (MDN attribute 1, see index.html) -->
             <img src="images/photos/marine-vs-alien.jpg" alt="A Colonial Marine face to face with a Xenomorph" width="600" draggable="false">
@@ -41,11 +53,13 @@
 
         <section>
           <h3>The Squad</h3>
+          <!-- picture on the right with a caption. The text wraps around it -->
           <div class="flowRight">
             <img src="images/photos/marine-squad-movie.webp" alt="The Colonial Marine squad from Aliens waiting in the ship's hangar" width="350">
             <br>
             <small class="credit">The squad gathered in the Sulaco's hangar before deployment. (<i>Aliens</i>, 1986 - avpcentral.com)</small>
           </div>
+          <!-- table: tr = row, th = header cell, td = cell -->
           <table>
             <caption>Key members of the squad in <i>Aliens</i></caption>
             <tr>
@@ -83,6 +97,7 @@
             <br>
             <small class="credit">A Marine carrying the M56 Smartgun. (<i>Aliens</i>, 1986 - alienanthology.fandom.com)</small>
           </div>
+          <!-- ul = bulleted list, li = one item -->
           <ul>
             <li>M41A Pulse Rifle</li>
             <li>M56 Smartgun</li>
@@ -95,6 +110,7 @@
         <section>
           <h3>Launch Countdown</h3>
           <!-- reversed makes the list count down from 5 -->
+          <!-- ol = numbered list, li = one item -->
           <ol start="5" reversed>
             <li>Conduct a weapons check</li>
             <li>Seal the bay doors</li>
@@ -113,10 +129,13 @@
       </article>
     </main>
 
+    <!-- footer = bottom of the page -->
     <footer role="contentinfo">
       <p>CIT 384 Project 1 - Alien Fan Site. I do not own any of the images on this site. They belong to their original owners.</p>
       <p>
+        <!-- jumps back up to the header -->
         <a href="#top" title="Go back to the top of this page">Back to top</a> |
+        <!-- target="_blank" opens a new tab, rel keeps it safe -->
         <a href="https://en.wikipedia.org/wiki/Alien_(franchise)" target="_blank" rel="noopener noreferrer" title="Read about the Alien movies on Wikipedia (opens in a new tab)">Alien on Wikipedia</a>
       </p>
     </footer>

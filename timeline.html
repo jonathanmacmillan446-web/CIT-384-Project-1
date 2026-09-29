@@ -1,8 +1,12 @@
 <!DOCTYPE html>
+<!-- lang="en" means this page is in English -->
 <html lang="en">
   <head>
+    <!-- charset makes letters and symbols show correctly -->
     <meta charset="utf-8">
+    <!-- title = the text on the browser tab -->
     <title>Alien Fan Site - Movie Timeline</title>
+    <!-- link connects this page to the stylesheet -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <!-- internal CSS: only used on this page -->
     <style>
@@ -14,10 +18,14 @@
   <body>
     <!-- classified warning strip at the top of every page -->
     <p class="classified">Top Secret // Weyland-Yutani Corporation // Clearance Level 5 Required</p>
+    <!-- header = top of the page. id="top" is where "Back to top" jumps to. role helps screen readers -->
     <header id="top" role="banner">
+      <!-- h1 = site name, h2 = page name -->
       <h1>Alien Fan Site</h1>
       <h2>Movie Timeline</h2>
+      <!-- file number for the classified look -->
       <p class="file-id">File 003 // Incident Chronology</p>
+      <!-- nav = links to every page. href = where it goes, title = tooltip on hover -->
       <nav role="navigation">
         <p><a href="index.html" title="Go to the home page">Home</a></p>
         <p><a href="xenomorphs.html" title="Learn about the Xenomorph">The Xenomorph</a></p>
@@ -28,11 +36,15 @@
       </nav>
     </header>
 
+    <!-- main = the main content of the page -->
     <main role="main">
+      <!-- article = holds all the content on this page -->
       <article role="article">
+        <!-- section = one topic, starting with an h3 heading -->
         <section>
           <h3>All the Movies</h3>
           <!-- draggable="false" (MDN attribute 1, see index.html) -->
+          <!-- picture on the right with a caption. The text wraps around it -->
           <div class="flowRight">
             <img src="images/photos/ripley-flamethrower.png" alt="Ripley holding a flamethrower and pulse rifle in the alien hive in Aliens" width="350" draggable="false">
             <br>
@@ -42,6 +54,7 @@
             The main <i>Alien</i> films are listed below in order of release. Ellen Ripley serves as
             the protagonist of the first four.
           </p>
+          <!-- dl = list of titles (dt) and descriptions (dd) -->
           <dl>
             <dt>Alien (1979)</dt>
             <dd>Directed by Ridley Scott. The crew of the Nostromo unknowingly brings a deadly alien aboard their ship.</dd>
@@ -101,6 +114,7 @@
           </p>
         </section>
 
+        <!-- aside = a side note box -->
         <aside role="complementary">
           <h4>Did You Know?</h4>
           <p>Although <i>Prometheus</i> and <i>Alien: Covenant</i> were released decades later, both take place before the events of the original film.</p>
@@ -111,18 +125,23 @@
           </p>
         </aside>
 
+        <!-- centered picture with a caption. alt describes the picture if it does not load -->
         <p class="center">
           <img src="images/photos/space-jockey.webp" alt="Painting of the Space Jockey sitting in its giant pilot chair" width="500">
           <br>
+          <!-- inline CSS using the style attribute -->
           <small style="color: gray;">H.R. Giger's original painting of the Space Jockey seated in its pilot chair. (monsterlegacy.net)</small>
         </p>
       </article>
     </main>
 
+    <!-- footer = bottom of the page -->
     <footer role="contentinfo">
       <p>CIT 384 Project 1 - Alien Fan Site. I do not own any of the images on this site. They belong to their original owners.</p>
       <p>
+        <!-- jumps back up to the header -->
         <a href="#top" title="Go back to the top of this page">Back to top</a> |
+        <!-- target="_blank" opens a new tab, rel keeps it safe -->
         <a href="https://en.wikipedia.org/wiki/Alien_(franchise)" target="_blank" rel="noopener noreferrer" title="Read about the Alien movies on Wikipedia (opens in a new tab)">Alien on Wikipedia</a>
       </p>
     </footer>

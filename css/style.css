@@ -1,32 +1,39 @@
 /* CIT 384 Project 1 - Alien Fan Site
-   Dark "ship computer" theme: near-black background,
-   acid green (#7fd34e) highlights, amber (#ffb347) details,
-   and monospace headings like an old computer terminal */
+   Main stylesheet. Every page links to this file.
+   Theme: dark "ship computer" look with green and amber colors */
 
+
+/* ---------- Whole page ---------- */
+
+/* the black area around the page */
 html {
   background: #050605;
 }
 
+/* the main column that holds the content */
 body {
   font-family: Verdana, Geneva, sans-serif;
   width: 80%;
-  margin-left: auto;
+  margin-left: auto;          /* auto on both sides centers the page */
   margin-right: auto;
   padding: 0 2% 2% 2%;
   background: #121512;
-  color: #d8e0d4;
+  color: #d8e0d4;             /* light gray text */
   line-height: 1.6;
   border-left: 1px solid #2c3a2c;
   border-right: 1px solid #2c3a2c;
 }
 
-/* amber "Top Secret" warning strip at the top of every page */
+
+/* ---------- Classified look ---------- */
+
+/* amber "Top Secret" strip at the top of every page */
 .classified {
   background: #ffb347;
   color: #050605;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: uppercase;  /* all capital letters */
   text-align: center;
   padding: 5px;
   margin: 0;
@@ -40,7 +47,7 @@ body {
   margin: 0 0 10px 0;
 }
 
-/* "Access Granted" line in the welcome pop-up */
+/* "Access Granted" line in the pop-up */
 .access {
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
@@ -49,18 +56,22 @@ body {
   margin: 0;
 }
 
-/* redacted text: a black bar that reveals the words on hover */
+/* black bar: black text on a black background hides the words */
 .redacted {
   background: #000000;
   color: #000000;
   padding: 0 4px;
 }
 
+/* on hover, the text turns amber so you can read it */
 .redacted:hover {
   color: #ffb347;
 }
 
-/* id selector - matches the one header with id="top" on each page */
+
+/* ---------- Header and headings ---------- */
+
+/* id selector: the header on each page has id="top" */
 #top {
   background: #0b0f0b;
   padding: 20px 15px 10px 15px;
@@ -68,15 +79,16 @@ body {
   border-bottom: 2px solid #7fd34e;
 }
 
+/* site name */
 h1 {
   font-family: "Courier New", Courier, monospace;
-  font-size: 2rem;
+  font-size: 2rem;            /* 1rem = 16px, so this is 32px */
   color: #7fd34e;
   text-transform: uppercase;
   margin: 0;
 }
 
-/* rem is relative to the root (html) element, so 1rem = 16px */
+/* page name */
 h2 {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 2.5rem;
@@ -84,7 +96,7 @@ h2 {
   margin: 0 0 10px 0;
 }
 
-/* section headings look like status bars on a ship's computer */
+/* section headings, styled like a status bar */
 h3 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
@@ -94,15 +106,19 @@ h3 {
   padding: 6px 10px;
 }
 
+
+/* ---------- Links and nav ---------- */
+
 a {
   color: #7fd34e;
 }
 
+/* links turn amber when you hover over them */
 a:hover {
   color: #ffb347;
 }
 
-/* descendant selector - the nav links sit side by side in a row */
+/* nav links sit in a row instead of stacking */
 nav p {
   display: inline;
   margin-right: 10px;
@@ -111,38 +127,49 @@ nav p {
   text-transform: uppercase;
 }
 
+/* no underline on the nav links */
 nav a {
   text-decoration: none;
   padding: 2px 6px;
 }
 
-/* hovering a nav link highlights it like a selected menu option */
+/* nav link turns into a green box on hover */
 nav a:hover {
   background: #7fd34e;
   color: #050605;
 }
 
+
+/* ---------- Tables ---------- */
+
+/* top row of a table */
 th {
   background: #1e261e;
   color: #7fd34e;
 }
 
+/* one rule for both kinds of cells */
 td, th {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #2c3a2c;
 }
 
-/* table rows light up when the mouse is over them */
+/* a row lights up on hover */
 tr:hover {
   background: #1b2a1b;
 }
 
+/* table title */
 caption {
   text-align: left;
   color: #8e9a8a;
 }
 
+
+/* ---------- Lists, boxes, and quotes ---------- */
+
+/* movie titles in the timeline list */
 dt {
   font-weight: bold;
 }
@@ -151,7 +178,7 @@ dd {
   margin-bottom: 10px;
 }
 
-/* the "Fun Fact" and "Did You Know?" boxes */
+/* side note boxes (Fun Fact, Did You Know?, Special Order 937) */
 aside {
   background: #1b2a1b;
   border: 1px dashed #7fd34e;
@@ -159,6 +186,7 @@ aside {
   margin-bottom: 1em;
 }
 
+/* headings inside the side note boxes */
 aside h4 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
@@ -166,6 +194,7 @@ aside h4 {
   margin-top: 0;
 }
 
+/* the movie quote on the home page */
 blockquote {
   font-style: italic;
   color: #a9b5a5;
@@ -174,11 +203,15 @@ blockquote {
   padding: 10px;
 }
 
+
+/* ---------- Pictures ---------- */
+
+/* centers the picture and caption */
 .center {
   text-align: center;
 }
 
-/* a picture and its credit line, floated to the right of the text */
+/* picture box on the right, text wraps around it */
 .flowRight {
   float: right;
   width: 356px;
@@ -186,42 +219,46 @@ blockquote {
   text-align: center;
 }
 
-/* narrower box for the tall Xenomorph head picture */
+/* smaller box for the tall Xenomorph head picture */
 .narrow {
   width: 186px;
 }
 
-/* thin green frame around the pictures */
+/* green frame around the pictures */
 .flowRight img,
 .center img {
   border: 3px solid #3d5a3d;
 }
 
-/* the frame turns bright green when the mouse is over a picture */
+/* frame turns bright green on hover */
 .flowRight img:hover,
 .center img:hover {
   border-color: #7fd34e;
 }
 
-/* small gray credit line under each picture */
+/* gray caption under each picture */
 .credit {
   color: #8e9a8a;
   font-style: italic;
 }
 
+/* each section starts below any picture floated before it */
 section {
   clear: both;
 }
 
-/* the contenteditable note boxes on xenomorphs.html */
+
+/* ---------- MDN elements and attributes ---------- */
+
+/* the contenteditable note boxes */
 .notes {
   background: #0b0d0b;
   border: 1px dashed #7fd34e;
   padding: 10px;
 }
 
-/* position: static keeps the pop-up in line with the page
-   so it doesn't cover the picture under it */
+/* the welcome pop-up. position: static keeps it from
+   covering the picture below it */
 dialog {
   position: static;
   margin: 0 auto 1em auto;
@@ -230,6 +267,7 @@ dialog {
   border: 2px solid #7fd34e;
 }
 
+/* the Acknowledge button in the pop-up */
 dialog button {
   background: #7fd34e;
   color: #050605;
@@ -237,6 +275,9 @@ dialog button {
   padding: 5px 15px;
   font-weight: bold;
 }
+
+
+/* ---------- Footer ---------- */
 
 footer {
   clear: both;
