@@ -22,7 +22,8 @@ body {
 
 /* id selector - matches the one header with id="top" on each page */
 #top {
-  padding: 20px 0 10px 0;
+  background: #0b0f0b;
+  padding: 20px 15px 10px 15px;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #7fd34e;
 }
@@ -43,12 +44,14 @@ h2 {
   margin: 0 0 10px 0;
 }
 
+/* section headings look like status bars on a ship's computer */
 h3 {
   font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   color: #7fd34e;
+  background: #1a211a;
   border-left: 4px solid #7fd34e;
-  padding-left: 10px;
+  padding: 6px 10px;
 }
 
 a {
@@ -62,10 +65,21 @@ a:hover {
 /* descendant selector - the nav links sit side by side in a row */
 nav p {
   display: inline;
-  margin-right: 20px;
+  margin-right: 10px;
   font-family: "Courier New", Courier, monospace;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 2px 6px;
+}
+
+/* hovering a nav link highlights it like a selected menu option */
+nav a:hover {
+  background: #7fd34e;
+  color: #050605;
 }
 
 th {
@@ -77,6 +91,11 @@ td, th {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #2c3a2c;
+}
+
+/* table rows light up when the mouse is over them */
+tr:hover {
+  background: #1b2a1b;
 }
 
 caption {
@@ -110,6 +129,9 @@ aside h4 {
 blockquote {
   font-style: italic;
   color: #a9b5a5;
+  border-top: 1px solid #ffb347;
+  border-bottom: 1px solid #ffb347;
+  padding: 10px;
 }
 
 .center {
@@ -135,9 +157,16 @@ blockquote {
   border: 3px solid #3d5a3d;
 }
 
+/* the frame turns bright green when the mouse is over a picture */
+.flowRight img:hover,
+.center img:hover {
+  border-color: #7fd34e;
+}
+
 /* small gray credit line under each picture */
 .credit {
   color: #8e9a8a;
+  font-style: italic;
 }
 
 section {
@@ -174,5 +203,6 @@ footer {
   border-top: 1px solid #2c3a2c;
   text-align: center;
   font-size: 0.8rem;
+  font-family: "Courier New", Courier, monospace;
   color: #8e9a8a;
 }
