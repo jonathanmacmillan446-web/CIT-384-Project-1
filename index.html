@@ -6,9 +6,12 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <!-- classified warning strip at the top of every page -->
+    <p class="classified">Top Secret // Weyland-Yutani Corporation // Clearance Level 5 Required</p>
     <header id="top" role="banner">
       <h1>My Alien Site</h1>
       <h2>Home</h2>
+      <p class="file-id">File 000 // Archive Index</p>
       <nav role="navigation">
         <p><a href="index.html" title="Go to the home page">Home</a></p>
         <p><a href="xenomorphs.html" title="Learn about the Xenomorph">The Xenomorph</a></p>
@@ -29,9 +32,10 @@
           form with method="dialog" closes it when you click OK.
         -->
         <dialog open>
+          <p class="access">Access Granted - Clearance Level 5</p>
           <p><strong>Welcome!</strong> This site is dedicated to my favorite film franchise, <i>Alien</i>.</p>
           <form method="dialog">
-            <button>OK</button>
+            <button>Acknowledge</button>
           </form>
         </dialog>
 
@@ -86,6 +90,16 @@
         <aside role="complementary">
           <h4>Fun Fact</h4>
           <p>Xenomorph blood is a highly corrosive <strong>acid</strong>, strong enough to eat through several decks of a starship's hull.</p>
+        </aside>
+
+        <aside role="complementary">
+          <h4>Special Order 937</h4>
+          <p>
+            In <i>Alien</i> (1979), Ripley uncovers the company's secret orders for the Nostromo:
+            bring the organism back for analysis. All other considerations secondary.
+            <!-- the redacted class hides the words behind a black bar until you hover over them -->
+            <span class="redacted" title="Hover to declassify">Crew expendable.</span>
+          </p>
         </aside>
 
         <section>
