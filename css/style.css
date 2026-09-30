@@ -96,6 +96,19 @@ h2 {
   margin: 0 0 10px 0;
 }
 
+/* home page only: big "Alien Archives" title */
+.main-title {
+  font-size: 4rem;            /* 4 x 16px = 64px */
+}
+
+/* home page only: "Weyland-Yutani Corporation" under the big title */
+.subheader {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #ffb347;
+}
+
 /* section headings, styled like a status bar */
 h3 {
   font-family: "Courier New", Courier, monospace;
